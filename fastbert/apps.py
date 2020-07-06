@@ -5,7 +5,6 @@ import os
 import pickle
 
 class WebappConfig(AppConfig):
-    name = 'fastbert'
     path = 'fastbert/model/models.p'
  
     # load models into separate variables
