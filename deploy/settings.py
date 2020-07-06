@@ -54,6 +54,8 @@ ROOT_URLCONF = 'deploy.urls'
 
 TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
 
+MODELS = os.path.join(BASE_DIR, 'fastbert/model')
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

@@ -3,9 +3,10 @@ import html
 import pathlib
 import os
 import pickle
+from django.conf import settings
 
 class WebappConfig(AppConfig):
-    path = 'fastbert/model/models.p'
+    path = os.path.join(settings.MODELS, 'models.p')
  
     # load models into separate variables
     # these will be accessible via this class
